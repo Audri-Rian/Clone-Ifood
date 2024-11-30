@@ -1,37 +1,38 @@
 package com.example.trabalhotalles.Classes;
 
 public class Item {
-    private String nome;
-    private double preco;
-    private String descricao;
+    private String productName;
+    private int quantity;
+    private double price;
 
-    public Item(String nome, double preco, String descricao) {
-        this.nome = nome;
-        this.preco = preco;
-        this.descricao = descricao;
-    }
-    public String getNome() {
-        return nome;
+    public Item(String productName, int quantity, double price) {
+        this.productName = productName;
+        this.quantity = quantity;
+        this.price = price;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getProductName() {
+        return productName;
     }
 
-    public double getPreco() {
-        return preco;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public void setPreco(double preco) {
-        this.preco = preco;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public double getPrice() {
+        return price;
     }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }
+
