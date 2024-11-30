@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trabalhotalles.SampleController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="34.0" prefHeight="17.0" prefWidth="200.0" text="Ifood" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="64.0" prefHeight="17.0" prefWidth="200.0" text="ProjetoTalles" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="114.0" layoutY="64.0" startX="-100.0" stroke="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../files/ifood-logo-bran-gran-9800797.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="369.0" prefHeight="17.0" prefWidth="225.0" text="Copytight (c). All Rights Reserved" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="407.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="48.0" layoutY="40.0" prefHeight="17.0" prefWidth="200.0" text="Login de Segurança">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Label layoutX="34.0" layoutY="107.0" text="Usuário">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="143.0" text="Senha">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usarnameTextField" layoutX="108.0" layoutY="105.0" promptText="Usuário" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="108.0" layoutY="140.0" promptText="Senha" />
+            <Button fx:id="loginButton" layoutX="30.0" layoutY="200.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="34.0" prefWidth="232.0" style="-fx-background-color: red;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="32.0" layoutY="254.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="34.0" prefWidth="232.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="35.0" layoutY="70.0" prefHeight="17.0" prefWidth="226.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
